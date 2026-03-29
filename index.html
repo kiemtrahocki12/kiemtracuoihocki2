@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hàn Quán — Đặc Sản Hàn Quốc Chính Hãng</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<header class="nav-bar" id="nav">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">
+      <img src="https://res.cloudinary.com/dq41i1pip/image/upload/v1774429336/b822f04c-6b24-4600-bb9b-48e8c4bc6e9a-removebg-preview_1_f2jdpx.png" alt="Hàn Quán" class="nav-logo-img" />
+    </a>
+    <nav class="nav-links">
+      <a href="#features">Dịch vụ</a>
+      <a href="#products">Sản phẩm</a>
+      <a href="#new">Mới về</a>
+      <a href="#contact">Liên hệ</a>
+    </nav>
+    <a href="#products" class="nav-cta">Mua ngay</a>
+    <button class="burger" onclick="toggleNav()" aria-label="Menu">
+      <div></div>
+      <div></div>
+    </button>
+  </div>
+</header>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#features" onclick="closeNav()">Dịch vụ</a>
+  <a href="#products" onclick="closeNav()">Sản phẩm</a>
+  <a href="#new" onclick="closeNav()">Mới về</a>
+  <a href="#contact" onclick="closeNav()">Liên hệ</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-grid">
+    <div class="hero-left">
+      <p class="hero-tag">Nhập khẩu trực tiếp — Seoul, Korea</p>
+      <h1 class="hero-heading">
+        <span class="line">ĐỒ ĂN</span>
+        <span class="line red-line">HÀN QUỐC</span>
+        <span class="line">CHÍNH HÃNG</span>
+      </h1>
+      <div class="hero-body">
+        <p>Kimchi, Ramen, Tteok và hàng trăm đặc sản<br>giao tận tay trong vòng 48 giờ trên toàn quốc.</p>
+        <div class="hero-btns">
+          <a href="#products" class="btn-fill">Khám phá sản phẩm</a>
+          <a href="#features" class="btn-line">Tìm hiểu thêm</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="hero-img-block">
+        <img src="https://toptentravel.com.vn/Data/Sites/1/media/Tin-tuc/cam-nang-du-lich/dac-san-am-thuc-noi-tieng-cua-han-quoc-15.jpg" alt="Bữa ăn Hàn Quốc" />
+        <div class="img-label">
+          <span class="img-label-no">01</span>
+          <span>Bữa ăn Hanjeongsik truyền thống</span>
+        </div>
+      </div>
+      <div class="hero-side-stats">
+        <div class="side-stat"><strong>2.4K</strong><span>Sản phẩm</span></div>
+        <div class="side-stat"><strong>50K</strong><span>Khách hàng</span></div>
+        <div class="side-stat"><strong>4.9</strong><span>Đánh giá</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-bottom-bar">
+    <span>Giao hàng toàn quốc</span>
+    <div class="dot"></div>
+    <span>Hàng nhập khẩu chính hãng</span>
+    <div class="dot"></div>
+    <span>Đổi trả trong 7 ngày</span>
+    <div class="dot"></div>
+    <span>Hỗ trợ 24/7</span>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker">
+  <div class="ticker-track">
+    <span>KIMCHI</span><span>SHIN RAMYUN</span><span>TTEOKBOKKI</span>
+    <span>GOCHUJANG</span><span>BIBIMBAP</span><span>KIMBAP</span>
+    <span>SOJU</span><span>JAPCHAE</span><span>SPAM</span>
+    <span>BINGGRAE</span><span>BIBIGO</span><span>NONGSHIM</span>
+    <span>KIMCHI</span><span>SHIN RAMYUN</span><span>TTEOKBOKKI</span>
+    <span>GOCHUJANG</span><span>BIBIMBAP</span><span>KIMBAP</span>
+    <span>SOJU</span><span>JAPCHAE</span><span>SPAM</span>
+    <span>BINGGRAE</span><span>BIBIGO</span><span>NONGSHIM</span>
+  </div>
+</div>
+
+<!-- FEATURES -->
+<section class="features" id="features">
+  <div class="features-inner">
+    <div class="features-header">
+      <p class="section-tag">Cam kết của chúng tôi</p>
+      <h2 class="section-heading">TẠI SAO CHỌN<br><em>HÀN QUÁN?</em></h2>
+    </div>
+    <div class="features-grid">
+      <div class="feat reveal">
+        <div class="feat-num">01</div>
+        <h3>Giao hàng nhanh</h3>
+        <p>Giao toàn quốc trong 2–3 ngày. Miễn phí ship cho đơn từ 300.000đ.</p>
+      </div>
+      <div class="feat reveal" style="transition-delay:.1s">
+        <div class="feat-num">02</div>
+        <h3>Hàng chính hãng</h3>
+        <p>100% nhập khẩu trực tiếp từ Hàn Quốc, có tem kiểm định và chứng nhận xuất xứ.</p>
+      </div>
+      <div class="feat reveal" style="transition-delay:.2s">
+        <div class="feat-num">03</div>
+        <h3>Đổi trả dễ dàng</h3>
+        <p>Hỗ trợ đổi trả trong 7 ngày nếu sản phẩm lỗi hoặc không đúng mô tả.</p>
+      </div>
+      <div class="feat reveal" style="transition-delay:.3s">
+        <div class="feat-num">04</div>
+        <h3>Hỗ trợ 24/7</h3>
+        <p>Đội ngũ tư vấn luôn sẵn sàng giải đáp mọi thắc mắc qua Zalo, Facebook và Hotline.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS — bán chạy -->
+<section class="products" id="products">
+  <div class="products-inner">
+    <div class="products-header">
+      <div>
+        <p class="section-tag">Danh mục nổi bật</p>
+        <h2 class="section-heading">SẢN PHẨM<br><em>BÁN CHẠY</em></h2>
+      </div>
+      <a href="#" class="ghost-link">Xem tất cả &rarr;</a>
+    </div>
+    <div class="products-grid">
+
+      <div class="product-card reveal">
+        <div class="pcard-img">
+          <img src="https://busanfoods.com/wp-content/uploads/2020/06/Kimchi-cai-thao-busan-foods-2-1.jpg" alt="Kimchi" />
+          <span class="pcard-badge">Bán chạy</span>
+          <button class="pcard-action">Thêm vào giỏ</button>
+        </div>
+        <div class="pcard-body">
+          <p class="pcard-origin">Hàn Quốc — Busan Foods</p>
+          <h3>Kimchi Baechu 1kg</h3>
+          <p class="pcard-price">189.000<span>đ</span></p>
+        </div>
+      </div>
+
+      <div class="product-card reveal" style="transition-delay:.07s">
+        <div class="pcard-img">
+          <img src="https://m.media-amazon.com/images/I/71ynoLzgGRL._AC_UF894,1000_QL80_.jpg" alt="Shin Ramyun" />
+          <span class="pcard-badge">Phổ biến</span>
+          <button class="pcard-action">Thêm vào giỏ</button>
+        </div>
+        <div class="pcard-body">
+          <p class="pcard-origin">Hàn Quốc — Nongshim</p>
+          <h3>Shin Ramyun hộp 5 gói</h3>
+          <p class="pcard-price">75.000<span>đ</span></p>
+        </div>
+      </div>
+
+      <div class="product-card reveal" style="transition-delay:.14s">
+        <div class="pcard-img">
+          <img src="https://www.tteokbokki.vn/cdn/shop/files/Tuong-ot-gochujang-CJ-500g.png?v=1698827222" alt="Gochujang" />
+          <button class="pcard-action">Thêm vào giỏ</button>
+        </div>
+        <div class="pcard-body">
+          <p class="pcard-origin">Hàn Quốc — CJ Foods</p>
+          <h3>Tương ớt Gochujang 500g</h3>
+          <p class="pcard-price">99.000<span>đ</span></p>
+        </div>
+      </div>
+
+      <div class="product-card reveal" style="transition-delay:.21s">
+        <div class="pcard-img">
+          <img src="https://cdn.tgdd.vn/Products/Images/7162/325612/bhx/banh-gao-tteokbokki-bibigo-vi-cay-ngot-ly-125g-202405081534271955.jpg" alt="Tteok" />
+          <button class="pcard-action">Thêm vào giỏ</button>
+        </div>
+        <div class="pcard-body">
+          <p class="pcard-origin">Hàn Quốc — Bibigo</p>
+          <h3>Bánh gạo Tteok 500g</h3>
+          <p class="pcard-price">120.000<span>đ</span></p>
+        </div>
+      </div>
+
+      <div class="product-card reveal" style="transition-delay:.28s">
+        <div class="pcard-img">
+          <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-liqaz3yxyh1u53" alt="Bibimbap" />
+          <button class="pcard-action">Thêm vào giỏ</button>
+        </div>
+        <div class="pcard-body">
+          <p class="pcard-origin">Hàn Quốc — CJ Bibigo</p>
+          <h3>Bibimbap ăn liền 280g</h3>
+          <p class="pcard-price">55.000<span>đ</span></p>
+        </div>
+      </div>
+
+      <div class="product-card reveal" style="transition-delay:.35s">
+        <div class="pcard-img">
+          <img src="https://sg-live-01.slatic.net/p/31984274b8ff1f847c69e96f1f63ebf2.png_525x525q80.jpg" alt="Snack" />
+          <span class="pcard-badge">Mới</span>
+          <button class="pcard-action">Thêm vào giỏ</button>
+        </div>
+        <div class="pcard-body">
+          <p class="pcard-origin">Hàn Quốc — Tổng hợp</p>
+          <h3>Snack Hàn Quốc 10 gói</h3>
+          <p class="pcard-price">145.000<span>đ</span></p>
+        </div>
+      </div>
+
+      <div class="product-card reveal" style="transition-delay:.42s">
+        <div class="pcard-img">
+          <img src="https://img08.weeecdn.net/item/image/377/257/40764A82DC077F6.jpg!c750x0_q80_t1.auto" alt="Japchae" />
+          <button class="pcard-action">Thêm vào giỏ</button>
+        </div>
+        <div class="pcard-body">
+          <p class="pcard-origin">Hàn Quốc — Nhập khẩu</p>
+          <h3>Miến trộn Japchae 200g</h3>
+          <p class="pcard-price">85.000<span>đ</span></p>
+        </div>
+      </div>
+
+      <div class="product-card reveal" style="transition-delay:.49s">
+        <div class="pcard-img">
+          <img src="https://www.koryomart.co.kr/cdn/shop/files/CJBibigo_KoreaKimbap_TunaMayo_250g-1.png?v=1738213313&width=1445" alt="Kimbap" />
+          <button class="pcard-action">Thêm vào giỏ</button>
+        </div>
+        <div class="pcard-body">
+          <p class="pcard-origin">Hàn Quốc — CJ Bibigo</p>
+          <h3>Cơm cuộn Kimbap tươi</h3>
+          <p class="pcard-price">45.000<span>đ</span></p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROMO -->
+<section class="promo">
+  <div class="promo-inner">
+    <div class="promo-left">
+      <div class="promo-disc">&minus;20%</div>
+      <div class="promo-text">
+        <p class="section-tag promo-tag">Ưu đãi có hạn</p>
+        <h2>ĐƠN HÀNG<br>ĐẦU TIÊN</h2>
+        <p>Nhập mã <strong>KOREA20</strong> khi thanh toán<br>để nhận ngay ưu đãi đặc biệt.</p>
+        <a href="#products" class="btn-fill btn-white">Mua ngay</a>
+      </div>
+    </div>
+    <div class="promo-right" aria-hidden="true">
+      <div class="promo-bg-text">HQ</div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS — mới nhất -->
+<section class="products products-new" id="new">
+  <div class="products-inner">
+    <div class="products-header">
+      <div>
+        <p class="section-tag">Vừa về kho</p>
+        <h2 class="section-heading">SẢN PHẨM<br><em>MỚI NHẤT</em></h2>
+      </div>
+      <a href="#" class="ghost-link">Xem tất cả &rarr;</a>
+    </div>
+    <div class="products-grid grid-4">
+
+      <div class="product-card reveal">
+        <div class="pcard-img">
+          <img src="https://www.lottemart.vn/media/catalog/product/cache/0x0/8/8/8801152233801-1-1.jpg.webp" alt="Soju" />
+          <span class="pcard-badge">Mới</span>
+          <button class="pcard-action">Thêm vào giỏ</button>
+        </div>
+        <div class="pcard-body">
+          <p class="pcard-origin">Hàn Quốc — Lotte Chilsung</p>
+          <h3>Rượu Soju Chum Churum 360ml</h3>
+          <p class="pcard-price">65.000<span>đ</span></p>
+        </div>
+      </div>
+
+      <div class="product-card reveal" style="transition-delay:.08s">
+        <div class="pcard-img">
+          <img src="https://cdn.tgdd.vn/Products/Images/7083/197235/bhx/loc-3-goi-rong-bien-an-lien-vi-bbq-bibigo-5g-202002031129488732.jpg" alt="Rong biển" />
+          <button class="pcard-action">Thêm vào giỏ</button>
+        </div>
+        <div class="pcard-body">
+          <p class="pcard-origin">Hàn Quốc — CJ Bibigo</p>
+          <h3>Rong biển nướng muối mè 3 gói</h3>
+          <p class="pcard-price">35.000<span>đ</span></p>
+        </div>
+      </div>
+
+      <div class="product-card reveal" style="transition-delay:.16s">
+        <div class="pcard-img">
+          <img src="https://www.tteokbokki.vn/cdn/shop/files/Sua-chuoi-Binggrae-hop-200ml.png?v=1742463820" alt="Sữa chuối" />
+          <button class="pcard-action">Thêm vào giỏ</button>
+        </div>
+        <div class="pcard-body">
+          <p class="pcard-origin">Hàn Quốc — Binggrae</p>
+          <h3>Sữa chuối Binggrae 200ml</h3>
+          <p class="pcard-price">22.000<span>đ</span></p>
+        </div>
+      </div>
+
+      <div class="product-card reveal" style="transition-delay:.24s">
+        <div class="pcard-img">
+          <img src="https://www.tteokbokki.vn/cdn/shop/products/Thit-hop-Han-Quoc-CJ-340g.png?v=1677653424" alt="Thịt hộp" />
+          <button class="pcard-action">Thêm vào giỏ</button>
+        </div>
+        <div class="pcard-body">
+          <p class="pcard-origin">Hàn Quốc — CJ Foods</p>
+          <h3>Thịt hộp Spam CJ 340g</h3>
+          <p class="pcard-price">115.000<span>đ</span></p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="newsletter">
+  <div class="newsletter-inner">
+    <div class="nl-left">
+      <p class="section-tag nl-tag">Đặc quyền thành viên</p>
+      <h2>NHẬN ƯU ĐÃI<br><em>ĐỘC QUYỀN</em></h2>
+    </div>
+    <div class="nl-right">
+      <p>Đăng ký email nhận thông báo sản phẩm mới, flash sale và mã giảm giá dành riêng cho thành viên.</p>
+      <form class="nl-form" onsubmit="return false;">
+        <input type="email" placeholder="Địa chỉ email của bạn" required />
+        <button type="submit">Đăng ký</button>
+      </form>
+      <p class="nl-note">Cam kết không spam. Hủy đăng ký bất cứ lúc nào.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer" id="contact">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="f-logo">HÀN QUÁN</div>
+        <p>Chuyên cung cấp thực phẩm Hàn Quốc nhập khẩu chính hãng. Chất lượng và hương vị chuẩn Hàn.</p>
+        <div class="f-socials">
+          <a href="#">Facebook</a>
+          <a href="#">Instagram</a>
+          <a href="#">TikTok</a>
+        </div>
+      </div>
+      <div class="footer-cols">
+        <div class="f-col">
+          <h4>Sản phẩm</h4>
+          <a href="#">Kimchi &amp; Dưa cải</a>
+          <a href="#">Mì &amp; Ramyun</a>
+          <a href="#">Gia vị Hàn Quốc</a>
+          <a href="#">Đồ ăn liền</a>
+          <a href="#">Đồ uống</a>
+        </div>
+        <div class="f-col">
+          <h4>Hỗ trợ</h4>
+          <a href="#">Chính sách đổi trả</a>
+          <a href="#">Hướng dẫn đặt hàng</a>
+          <a href="#">Câu hỏi thường gặp</a>
+          <a href="#">Theo dõi đơn hàng</a>
+        </div>
+        <div class="f-col">
+          <h4>Liên hệ</h4>
+          <p>Quận 7, TP. Hồ Chí Minh</p>
+          <p>0972 367 367</p>
+          <p>krstore (at) gmail.com</p>
+          <p>8:00 – 22:00 hàng ngày</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Hàn Quán. All rights reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Chính sách bảo mật</a>
+        <a href="#">Điều khoản sử dụng</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function toggleNav() {
+    document.getElementById('mobileMenu').classList.toggle('open');
+    document.querySelector('.burger').classList.toggle('active');
+  }
+  function closeNav() {
+    document.getElementById('mobileMenu').classList.remove('open');
+    document.querySelector('.burger').classList.remove('active');
+  }
+  var io = new IntersectionObserver(function(entries) {
+    entries.forEach(function(e) {
+      if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(function(el) { io.observe(el); });
+  window.addEventListener('scroll', function() {
+    document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 10);
+  });
+</script>
+</body>
+</html>
