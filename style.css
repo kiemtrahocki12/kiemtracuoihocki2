@@ -756,7 +756,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fb)
   .nav-inner { padding: 0 32px; }
   .nav-links, .nav-cta { display: none; }
   .burger { display: flex; }
-  .nav-logo-img { height: 48px !important; }
+  .nav-logo-img { height: 95px !important; }
 
   .hero-grid {
     grid-template-columns: 1fr;
