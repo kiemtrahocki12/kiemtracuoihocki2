@@ -125,7 +125,8 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fb)
 .nav-logo-img {
   display: block;
   width: auto !important;
-  height: 56px !important;
+  height: 120px !important;
+  margin-top: 10px;
   object-fit: contain !important;
 }
 
