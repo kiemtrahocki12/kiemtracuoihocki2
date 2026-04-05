@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Liên Hệ — Hàn Quán</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<header class="nav-bar" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <img src="https://res.cloudinary.com/dq41i1pip/image/upload/v1774429336/b822f04c-6b24-4600-bb9b-48e8c4bc6e9a-removebg-preview_1_f2jdpx.png" alt="Hàn Quán" class="nav-logo-img" />
+    </a>
+    <nav class="nav-links">
+      <a href="index.html#features">Dịch vụ</a>
+      <a href="shop.html">Sản phẩm</a>
+      <a href="blog.html">Blog</a>
+      <a href="about.html">Về chúng tôi</a>
+      <a href="contact.html" class="active">Liên hệ</a>
+    </nav>
+    <a href="cart.html" class="nav-cta">🛒 Giỏ hàng</a>
+    <button class="burger" onclick="toggleNav()" aria-label="Menu">
+      <div></div>
+      <div></div>
+    </button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html#features" onclick="closeNav()">Dịch vụ</a>
+  <a href="shop.html" onclick="closeNav()">Sản phẩm</a>
+  <a href="blog.html" onclick="closeNav()">Blog</a>
+  <a href="about.html" onclick="closeNav()">Về chúng tôi</a>
+  <a href="contact.html" onclick="closeNav()">Liên hệ</a>
+  <a href="cart.html" onclick="closeNav()">Giỏ hàng</a>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="page-hero-bg">LIÊN HỆ</div>
+  <div class="page-hero-inner">
+    <p class="breadcrumb"><a href="index.html">Trang chủ</a> &nbsp;/&nbsp; Liên hệ</p>
+    <h1>HÃY<br><em>NÓI CHUYỆN</em></h1>
+    <p>Chúng tôi luôn sẵn sàng lắng nghe — dù bạn cần tư vấn sản phẩm, hỗ trợ đơn hàng hay muốn hợp tác kinh doanh.</p>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker">
+  <div class="ticker-track">
+    <span>HỖ TRỢ 24/7</span><span>ZALO: 0972 367 367</span><span>EMAIL PHẢN HỒI TRONG 2H</span>
+    <span>ĐỔI TRẢ 7 NGÀY</span><span>GIAO HÀNG TOÀN QUỐC</span><span>PHẢN HỒI NHANH</span>
+    <span>HỖ TRỢ 24/7</span><span>ZALO: 0972 367 367</span><span>EMAIL PHẢN HỒI TRONG 2H</span>
+    <span>ĐỔI TRẢ 7 NGÀY</span><span>GIAO HÀNG TOÀN QUỐC</span><span>PHẢN HỒI NHANH</span>
+  </div>
+</div>
+
+<!-- CONTACT SECTION -->
+<section class="contact-section">
+  <div class="contact-inner">
+
+    <!-- INFO COLUMN -->
+    <div class="contact-info reveal">
+      <p class="section-tag">Thông tin liên hệ</p>
+      <h2>CHÚNG TÔI<br><em>Ở ĐÂY</em></h2>
+      <p>Đội ngũ chăm sóc khách hàng của Hàn Quán hoạt động từ 8:00 đến 22:00 mỗi ngày, kể cả cuối tuần và ngày lễ. Phản hồi email trong vòng 2 giờ làm việc.</p>
+
+      <div class="contact-cards">
+        <div class="contact-card">
+          <div class="contact-icon">📍</div>
+          <div class="contact-card-text">
+            <h4>Địa chỉ kho hàng</h4>
+            <p>123 Đường Nguyễn Hữu Thọ,<br>Phường Tân Phong, Quận 7,<br>TP. Hồ Chí Minh</p>
+          </div>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon">📞</div>
+          <div class="contact-card-text">
+            <h4>Hotline & Zalo</h4>
+            <p><a href="tel:0972367367">0972 367 367</a><br>8:00 – 22:00, hàng ngày kể cả Chủ nhật</p>
+          </div>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon">✉️</div>
+          <div class="contact-card-text">
+            <h4>Email</h4>
+            <p><a href="mailto:support@hanquan.vn">support@hanquan.vn</a><br>Phản hồi trong vòng 2 giờ làm việc</p>
+          </div>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon">🕒</div>
+          <div class="contact-card-text">
+            <h4>Giờ làm việc</h4>
+            <p>Thứ Hai – Chủ Nhật<br>8:00 sáng – 10:00 tối</p>
+          </div>
+        </div>
+      </div>
+
+      <div style="display:flex; gap:16px; margin-top:32px; flex-wrap:wrap;">
+        <a href="#" class="btn-fill" style="flex:1; text-align:center;">Facebook</a>
+        <a href="#" class="btn-line" style="flex:1; text-align:center;">Instagram</a>
+      </div>
+    </div>
+
+    <!-- FORM COLUMN -->
+    <div class="contact-form-wrap reveal" style="transition-delay:.15s">
+      <h3>GỬI TIN NHẮN</h3>
+      <p>Điền thông tin và chúng tôi sẽ liên hệ lại trong vòng 2 giờ.</p>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="fname">Họ</label>
+          <input type="text" id="fname" placeholder="Nguyễn" required />
+        </div>
+        <div class="form-group">
+          <label for="lname">Tên</label>
+          <input type="text" id="lname" placeholder="Văn A" required />
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Địa chỉ email *</label>
+        <input type="email" id="email" placeholder="email@example.com" required />
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Số điện thoại</label>
+        <input type="tel" id="phone" placeholder="09xx xxx xxx" />
+      </div>
+
+      <div class="form-group">
+        <label for="subject">Chủ đề</label>
+        <select id="subject">
+          <option value="" disabled selected>Chọn chủ đề liên hệ...</option>
+          <option value="order">Hỏi về đơn hàng</option>
+          <option value="product">Tư vấn sản phẩm</option>
+          <option value="return">Đổi trả hàng</option>
+          <option value="wholesale">Hợp tác / Mua sỉ</option>
+          <option value="other">Khác</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Nội dung *</label>
+        <textarea id="message" rows="5" placeholder="Mô tả chi tiết vấn đề hoặc câu hỏi của bạn..." required></textarea>
+      </div>
+
+      <button type="button" class="btn-fill" onclick="submitForm()">Gửi tin nhắn →</button>
+
+      <div class="form-success" id="formSuccess">
+        ✓ &nbsp;Cảm ơn bạn! Chúng tôi sẽ phản hồi trong vòng 2 giờ làm việc.
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- MAP -->
+<div class="contact-map-strip">
+  <div class="map-label">📍 Hàn Quán — Quận 7, TP. Hồ Chí Minh</div>
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.8584085!2d106.7017!3d10.7295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f77b3d7d7a3%3A0x0!2sPhu%20My%20Hung%2C%20Tan%20Phong%2C%20District%207%2C%20Ho%20Chi%20Minh%20City!5e0!3m2!1sen!2s!4v1680000000000!5m2!1sen!2s"
+    loading="lazy"
+    allowfullscreen
+    referrerpolicy="no-referrer-when-downgrade"
+    title="Hàn Quán Location">
+  </iframe>
+</div>
+
+<!-- FEATURES STRIP -->
+<section class="features">
+  <div class="features-inner">
+    <div class="features-header">
+      <p class="section-tag">Cam kết của chúng tôi</p>
+      <h2 class="section-heading">HỖ TRỢ<br><em>TOÀN DIỆN</em></h2>
+    </div>
+    <div class="features-grid">
+      <div class="feat reveal">
+        <div class="feat-num">01</div>
+        <h3>Phản hồi trong 2h</h3>
+        <p>Mọi email và tin nhắn đều được phản hồi trong vòng 2 giờ làm việc, 7 ngày/tuần.</p>
+      </div>
+      <div class="feat reveal" style="transition-delay:.1s">
+        <div class="feat-num">02</div>
+        <h3>Tư vấn chuyên sâu</h3>
+        <p>Đội ngũ am hiểu ẩm thực Hàn Quốc, sẵn sàng gợi ý sản phẩm và công thức nấu ăn.</p>
+      </div>
+      <div class="feat reveal" style="transition-delay:.2s">
+        <div class="feat-num">03</div>
+        <h3>Đổi trả dễ dàng</h3>
+        <p>Hỗ trợ đổi trả trong 7 ngày với thủ tục đơn giản, không yêu cầu lý do.</p>
+      </div>
+      <div class="feat reveal" style="transition-delay:.3s">
+        <div class="feat-num">04</div>
+        <h3>Hợp tác B2B</h3>
+        <p>Chính sách giá sỉ hấp dẫn cho nhà hàng, quán ăn và cửa hàng tạp hóa.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="f-logo">HÀN QUÁN</div>
+        <p>Chuyên cung cấp thực phẩm Hàn Quốc nhập khẩu chính hãng. Chất lượng và hương vị chuẩn Hàn.</p>
+        <div class="f-socials">
+          <a href="#">Facebook</a>
+          <a href="#">Instagram</a>
+          <a href="#">TikTok</a>
+        </div>
+      </div>
+      <div class="footer-cols">
+        <div class="f-col">
+          <h4>Điều hướng</h4>
+          <a href="index.html">Trang chủ</a>
+          <a href="shop.html">Cửa hàng</a>
+          <a href="blog.html">Blog</a>
+          <a href="about.html">Về chúng tôi</a>
+          <a href="contact.html">Liên hệ</a>
+          <a href="cart.html">Giỏ hàng</a>
+        </div>
+        <div class="f-col">
+          <h4>Hỗ trợ</h4>
+          <a href="#">Chính sách đổi trả</a>
+          <a href="#">Hướng dẫn đặt hàng</a>
+          <a href="#">Câu hỏi thường gặp</a>
+          <a href="#">Theo dõi đơn hàng</a>
+        </div>
+        <div class="f-col">
+          <h4>Liên hệ</h4>
+          <p>Quận 7, TP. Hồ Chí Minh</p>
+          <p>0972 367 367</p>
+          <p>krstore (at) gmail.com</p>
+          <p>8:00 – 22:00 hàng ngày</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Hàn Quán. All rights reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Chính sách bảo mật</a>
+        <a href="#">Điều khoản sử dụng</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function toggleNav() {
+    document.getElementById('mobileMenu').classList.toggle('open');
+    document.querySelector('.burger').classList.toggle('active');
+  }
+  function closeNav() {
+    document.getElementById('mobileMenu').classList.remove('open');
+    document.querySelector('.burger').classList.remove('active');
+  }
+  function submitForm() {
+    var email = document.getElementById('email').value.trim();
+    var message = document.getElementById('message').value.trim();
+    if (!email || !message) {
+      alert('Vui lòng điền email và nội dung tin nhắn.');
+      return;
+    }
+    document.getElementById('formSuccess').classList.add('show');
+    document.getElementById('email').value = '';
+    document.getElementById('message').value = '';
+    document.getElementById('fname').value = '';
+    document.getElementById('lname').value = '';
+    document.getElementById('phone').value = '';
+  }
+  var io = new IntersectionObserver(function(entries) {
+    entries.forEach(function(e) {
+      if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(function(el) { io.observe(el); });
+  window.addEventListener('scroll', function() {
+    document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 10);
+  });
+</script>
+</body>
+</html>

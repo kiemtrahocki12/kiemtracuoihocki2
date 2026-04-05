@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog — Hàn Quán</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<header class="nav-bar" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <img src="https://res.cloudinary.com/dq41i1pip/image/upload/v1774429336/b822f04c-6b24-4600-bb9b-48e8c4bc6e9a-removebg-preview_1_f2jdpx.png" alt="Hàn Quán" class="nav-logo-img" />
+    </a>
+    <nav class="nav-links">
+      <a href="index.html#features">Dịch vụ</a>
+      <a href="shop.html">Sản phẩm</a>
+      <a href="blog.html" class="active">Blog</a>
+      <a href="about.html">Về chúng tôi</a>
+      <a href="contact.html">Liên hệ</a>
+    </nav>
+    <a href="cart.html" class="nav-cta">🛒 Giỏ hàng</a>
+    <button class="burger" onclick="toggleNav()" aria-label="Menu">
+      <div></div>
+      <div></div>
+    </button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html#features" onclick="closeNav()">Dịch vụ</a>
+  <a href="shop.html" onclick="closeNav()">Sản phẩm</a>
+  <a href="blog.html" onclick="closeNav()">Blog</a>
+  <a href="about.html" onclick="closeNav()">Về chúng tôi</a>
+  <a href="contact.html" onclick="closeNav()">Liên hệ</a>
+  <a href="cart.html" onclick="closeNav()">Giỏ hàng</a>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="page-hero-bg">BLOG</div>
+  <div class="page-hero-inner">
+    <p class="breadcrumb"><a href="index.html">Trang chủ</a> &nbsp;/&nbsp; Blog</p>
+    <h1>VĂN HÓA<br><em>ẨM THỰC HÀN</em></h1>
+    <p>Khám phá công thức, câu chuyện văn hóa và bí quyết thưởng thức ẩm thực Hàn Quốc đúng điệu.</p>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker">
+  <div class="ticker-track">
+    <span>KIMCHI</span><span>TTEOKBOKKI</span><span>BIBIMBAP</span>
+    <span>JAPCHAE</span><span>BULGOGI</span><span>SAMGYEOPSAL</span>
+    <span>DOENJANG</span><span>GOCHUJANG</span><span>SUNDUBU</span>
+    <span>KIMCHI</span><span>TTEOKBOKKI</span><span>BIBIMBAP</span>
+    <span>JAPCHAE</span><span>BULGOGI</span><span>SAMGYEOPSAL</span>
+    <span>DOENJANG</span><span>GOCHUJANG</span><span>SUNDUBU</span>
+  </div>
+</div>
+
+<!-- BLOG POSTS -->
+<section class="blog-section">
+  <div class="blog-inner">
+
+    <!-- FEATURED POST -->
+    <div class="blog-featured reveal" style="margin-bottom:2px;">
+      <div class="blog-img">
+        <img src="https://toptentravel.com.vn/Data/Sites/1/media/Tin-tuc/cam-nang-du-lich/dac-san-am-thuc-noi-tieng-cua-han-quoc-15.jpg" alt="Hanjeongsik" style="height:100%;object-fit:cover;" />
+      </div>
+      <div class="blog-body">
+        <span class="blog-featured-tag">Nổi bật</span>
+        <p class="blog-cat">Văn hóa ẩm thực</p>
+        <h2>Hanjeongsik — Bữa ăn hoàng gia đến bàn ăn hiện đại</h2>
+        <p>Hanjeongsik (한정식) là tinh hoa ẩm thực Hàn Quốc với hàng chục món ăn bày biện trang trọng trên mâm. Từ cung đình triều Joseon đến nhà hàng cao cấp Seoul ngày nay, mỗi món ăn đều chứa đựng triết lý cân bằng ngũ vị và ngũ sắc sâu sắc.</p>
+        <div class="blog-meta">
+          <div class="blog-author">Bởi <strong>Minh Châu</strong></div>
+          <span class="blog-date">20 Tháng 3, 2026</span>
+        </div>
+        <a href="#" class="blog-read-more" style="margin-top:20px;">Đọc tiếp &rarr;</a>
+      </div>
+    </div>
+
+    <!-- GRID POSTS -->
+    <div class="blog-grid">
+
+      <!-- Post 1 -->
+      <div class="blog-card reveal">
+        <div class="blog-img">
+          <img src="https://www.seriouseats.com/thmb/_eOgWQJOONH0mK7uWO5geT1bEBQ=/1500x1125/filters:no_upscale():max_bytes(150000):strip_icc()/20210520-baechu-kimchi-Step6-tim-chin-seriouseats-275fdcce1a81428a9a610b0e76e58665.jpg" alt="Kimchi" />
+        </div>
+        <div class="blog-body">
+          <p class="blog-cat">Công thức</p>
+          <h2>Tự làm Kimchi tại nhà — Bí quyết lên men chuẩn vị Seoul</h2>
+          <p>Kimchi không chỉ là món ăn mà còn là di sản văn hóa phi vật thể của Hàn Quốc. Hướng dẫn từng bước muối cải thảo, pha sốt gochugaru và lên men đúng kỹ thuật ngay tại bếp Việt của bạn. Kết quả đảm bảo giòn, chua vừa, cay thơm.</p>
+          <div class="blog-meta">
+            <div class="blog-author">Bởi <strong>Hà Linh</strong></div>
+            <span class="blog-date">15 Tháng 3, 2026</span>
+          </div>
+          <a href="#" class="blog-read-more">Đọc tiếp &rarr;</a>
+        </div>
+      </div>
+
+      <!-- Post 2 -->
+      <div class="blog-card reveal" style="transition-delay:.1s">
+        <div class="blog-img">
+          <img src="https://m.media-amazon.com/images/I/71ynoLzgGRL._AC_UF894,1000_QL80_.jpg" alt="Shin Ramyun" />
+        </div>
+        <div class="blog-body">
+          <p class="blog-cat">Review sản phẩm</p>
+          <h2>Shin Ramyun vs Jin Ramen — Mì gói Hàn nào ngon hơn năm 2026?</h2>
+          <p>Hai thương hiệu mì gói biểu tượng của Hàn Quốc đối đầu trực tiếp: Shin Ramyun với vị cay mạnh đặc trưng hay Jin Ramen với nước dùng thịt bò đậm đà? Chúng tôi đã thử nghiệm mù và cho ra kết quả bất ngờ.</p>
+          <div class="blog-meta">
+            <div class="blog-author">Bởi <strong>Tuấn Kiệt</strong></div>
+            <span class="blog-date">10 Tháng 3, 2026</span>
+          </div>
+          <a href="#" class="blog-read-more">Đọc tiếp &rarr;</a>
+        </div>
+      </div>
+
+      <!-- Post 3 -->
+      <div class="blog-card reveal" style="transition-delay:.2s">
+        <div class="blog-img">
+          <img src="https://www.tteokbokki.vn/cdn/shop/files/Tuong-ot-gochujang-CJ-500g.png?v=1698827222" alt="Gochujang" />
+        </div>
+        <div class="blog-body">
+          <p class="blog-cat">Gia vị & nguyên liệu</p>
+          <h2>Gochujang — Linh hồn của bếp Hàn và cách dùng đúng chuẩn</h2>
+          <p>Tương ớt gochujang đã có mặt trong ẩm thực Hàn từ thế kỷ 18 và ngày nay chinh phục đầu bếp toàn thế giới. Cách bảo quản, pha chế và ứng dụng gochujang vào hơn 10 món ăn phổ biến từ tteokbokki đến marinade bulgogi.</p>
+          <div class="blog-meta">
+            <div class="blog-author">Bởi <strong>Minh Châu</strong></div>
+            <span class="blog-date">5 Tháng 3, 2026</span>
+          </div>
+          <a href="#" class="blog-read-more">Đọc tiếp &rarr;</a>
+        </div>
+      </div>
+
+      <!-- Post 4 -->
+      <div class="blog-card reveal" style="transition-delay:.05s">
+        <div class="blog-img">
+          <img src="https://cdn.tgdd.vn/Products/Images/7162/325612/bhx/banh-gao-tteokbokki-bibigo-vi-cay-ngot-ly-125g-202405081534271955.jpg" alt="Tteokbokki" />
+        </div>
+        <div class="blog-body">
+          <p class="blog-cat">Công thức</p>
+          <h2>Tteokbokki chuẩn vị đường phố Myeongdong ngay tại nhà</h2>
+          <p>Bánh gạo sốt cay ngọt là món ăn vặt quốc dân của giới trẻ Hàn Quốc. Chúng tôi chia sẻ công thức gốc cùng biến tấu phô mai kéo sợi đang gây sốt trên MXH, đảm bảo thực hiện thành công ngay lần đầu.</p>
+          <div class="blog-meta">
+            <div class="blog-author">Bởi <strong>Hà Linh</strong></div>
+            <span class="blog-date">28 Tháng 2, 2026</span>
+          </div>
+          <a href="#" class="blog-read-more">Đọc tiếp &rarr;</a>
+        </div>
+      </div>
+
+      <!-- Post 5 -->
+      <div class="blog-card reveal" style="transition-delay:.15s">
+        <div class="blog-img">
+          <img src="https://www.lottemart.vn/media/catalog/product/cache/0x0/8/8/8801152233801-1-1.jpg.webp" alt="Soju" />
+        </div>
+        <div class="blog-body">
+          <p class="blog-cat">Văn hóa</p>
+          <h2>Soju và nghệ thuật uống rượu trong văn hóa Hàn Quốc</h2>
+          <p>Soju không chỉ là thức uống mà còn là biểu tượng gắn kết cộng đồng của người Hàn. Tìm hiểu các quy tắc ứng xử, cách rót rượu đúng phép và xu hướng soju trái cây đang thịnh hành toàn cầu.</p>
+          <div class="blog-meta">
+            <div class="blog-author">Bởi <strong>Tuấn Kiệt</strong></div>
+            <span class="blog-date">20 Tháng 2, 2026</span>
+          </div>
+          <a href="#" class="blog-read-more">Đọc tiếp &rarr;</a>
+        </div>
+      </div>
+
+      <!-- Post 6 -->
+      <div class="blog-card reveal" style="transition-delay:.25s">
+        <div class="blog-img">
+          <img src="https://www.tteokbokki.vn/cdn/shop/files/Sua-chuoi-Binggrae-hop-200ml.png?v=1742463820" alt="Sữa chuối Binggrae" />
+        </div>
+        <div class="blog-body">
+          <p class="blog-cat">Đồ uống</p>
+          <h2>Sữa chuối Binggrae — Huyền thoại 50 năm vẫn làm xiêu lòng Gen Z</h2>
+          <p>Ra đời năm 1974, Binggrae Banana Milk với vỏ hộp hình con sư tử cute đã trở thành biểu tượng ký ức của nhiều thế hệ. Câu chuyện thú vị đằng sau thiết kế kinh điển và vì sao nó vẫn bán chạy hàng triệu hộp mỗi ngày.</p>
+          <div class="blog-meta">
+            <div class="blog-author">Bởi <strong>Minh Châu</strong></div>
+            <span class="blog-date">12 Tháng 2, 2026</span>
+          </div>
+          <a href="#" class="blog-read-more">Đọc tiếp &rarr;</a>
+        </div>
+      </div>
+
+    </div>
+    <!-- END BLOG GRID -->
+
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="newsletter">
+  <div class="newsletter-inner">
+    <div class="nl-left">
+      <p class="section-tag nl-tag">Đặc quyền thành viên</p>
+      <h2>NHẬN ƯU ĐÃI<br><em>ĐỘC QUYỀN</em></h2>
+    </div>
+    <div class="nl-right">
+      <p>Đăng ký email nhận thông báo bài viết mới, flash sale và mã giảm giá dành riêng cho thành viên.</p>
+      <form class="nl-form" onsubmit="return false;">
+        <input type="email" placeholder="Địa chỉ email của bạn" required />
+        <button type="submit">Đăng ký</button>
+      </form>
+      <p class="nl-note">Cam kết không spam. Hủy đăng ký bất cứ lúc nào.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="f-logo">HÀN QUÁN</div>
+        <p>Chuyên cung cấp thực phẩm Hàn Quốc nhập khẩu chính hãng. Chất lượng và hương vị chuẩn Hàn.</p>
+        <div class="f-socials">
+          <a href="#">Facebook</a>
+          <a href="#">Instagram</a>
+          <a href="#">TikTok</a>
+        </div>
+      </div>
+      <div class="footer-cols">
+        <div class="f-col">
+          <h4>Điều hướng</h4>
+          <a href="index.html">Trang chủ</a>
+          <a href="shop.html">Cửa hàng</a>
+          <a href="blog.html">Blog</a>
+          <a href="about.html">Về chúng tôi</a>
+          <a href="contact.html">Liên hệ</a>
+          <a href="cart.html">Giỏ hàng</a>
+        </div>
+        <div class="f-col">
+          <h4>Hỗ trợ</h4>
+          <a href="#">Chính sách đổi trả</a>
+          <a href="#">Hướng dẫn đặt hàng</a>
+          <a href="#">Câu hỏi thường gặp</a>
+          <a href="#">Theo dõi đơn hàng</a>
+        </div>
+        <div class="f-col">
+          <h4>Liên hệ</h4>
+          <p>Quận 7, TP. Hồ Chí Minh</p>
+          <p>0972 367 367</p>
+          <p>krstore (at) gmail.com</p>
+          <p>8:00 – 22:00 hàng ngày</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Hàn Quán. All rights reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Chính sách bảo mật</a>
+        <a href="#">Điều khoản sử dụng</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function toggleNav() {
+    document.getElementById('mobileMenu').classList.toggle('open');
+    document.querySelector('.burger').classList.toggle('active');
+  }
+  function closeNav() {
+    document.getElementById('mobileMenu').classList.remove('open');
+    document.querySelector('.burger').classList.remove('active');
+  }
+  var io = new IntersectionObserver(function(entries) {
+    entries.forEach(function(e) {
+      if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(function(el) { io.observe(el); });
+  window.addEventListener('scroll', function() {
+    document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 10);
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kimchi Baechu 1kg — Hàn Quán</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="shop-product.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<header class="nav-bar" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <img src="https://res.cloudinary.com/dq41i1pip/image/upload/v1774429336/b822f04c-6b24-4600-bb9b-48e8c4bc6e9a-removebg-preview_1_f2jdpx.png" alt="Hàn Quán" class="nav-logo-img" />
+    </a>
+    <nav class="nav-links">
+      <a href="index.html#features">Dịch vụ</a>
+      <a href="shop.html" class="active">Sản phẩm</a>
+      <a href="blog.html">Blog</a>
+      <a href="about.html">Về chúng tôi</a>
+      <a href="contact.html">Liên hệ</a>
+    </nav>
+    <a href="cart.html" class="nav-cta">🛒 Giỏ hàng</a>
+    <button class="burger" onclick="toggleNav()" aria-label="Menu">
+      <div></div>
+      <div></div>
+    </button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html#features" onclick="closeNav()">Dịch vụ</a>
+  <a href="shop.html" onclick="closeNav()">Sản phẩm</a>
+  <a href="blog.html" onclick="closeNav()">Blog</a>
+  <a href="about.html" onclick="closeNav()">Về chúng tôi</a>
+  <a href="contact.html" onclick="closeNav()">Liên hệ</a>
+  <a href="cart.html" onclick="closeNav()">Giỏ hàng</a>
+</div>
+
+<!-- PRODUCT DETAIL -->
+<section class="product-detail">
+  <div class="product-detail-inner">
+
+    <!-- BREADCRUMB -->
+    <p class="pd-breadcrumb">
+      <a href="index.html">Trang chủ</a>
+      &nbsp;/&nbsp;
+      <a href="shop.html">Cửa hàng</a>
+      &nbsp;/&nbsp;
+      Kimchi Baechu 1kg
+    </p>
+
+    <div class="pd-grid">
+
+      <!-- GALLERY -->
+      <div class="pd-gallery">
+        <div class="pd-main-img" id="mainImg">
+          <img src="https://www.seriouseats.com/thmb/m16sray_HxYpJebVbXMxv906bhk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/20210527-baechu-kimchi-vicky-wasik-seriouseats-seriouseats-3-18a2d6d7d1d74a7a82cb13ed350218be.jpg" alt="Kimchi Baechu 1kg" id="mainImgEl" />
+          <div class="pd-badge">Bán chạy</div>
+        </div>
+        <div class="pd-thumbs">
+          <button class="pd-thumb active" onclick="changeImg(this,'https://www.seriouseats.com/thmb/m16sray_HxYpJebVbXMxv906bhk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/20210527-baechu-kimchi-vicky-wasik-seriouseats-seriouseats-3-18a2d6d7d1d74a7a82cb13ed350218be.jpg')">
+            <img src="https://www.seriouseats.com/thmb/m16sray_HxYpJebVbXMxv906bhk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/20210527-baechu-kimchi-vicky-wasik-seriouseats-seriouseats-3-18a2d6d7d1d74a7a82cb13ed350218be.jpg" alt="Ảnh 1" />
+          </button>
+          <button class="pd-thumb" onclick="changeImg(this,'https://busanfoods.com/wp-content/uploads/2020/06/Kimchi-cai-thao-busan-foods-2-1.jpg')">
+            <img src="https://busanfoods.com/wp-content/uploads/2020/06/Kimchi-cai-thao-busan-foods-2-1.jpg" alt="Ảnh 2" />
+          </button>
+          <button class="pd-thumb" onclick="changeImg(this,'https://www.seriouseats.com/thmb/_eOgWQJOONH0mK7uWO5geT1bEBQ=/1500x1125/filters:no_upscale():max_bytes(150000):strip_icc()/20210520-baechu-kimchi-Step6-tim-chin-seriouseats-275fdcce1a81428a9a610b0e76e58665.jpg')">
+            <img src="https://www.seriouseats.com/thmb/_eOgWQJOONH0mK7uWO5geT1bEBQ=/1500x1125/filters:no_upscale():max_bytes(150000):strip_icc()/20210520-baechu-kimchi-Step6-tim-chin-seriouseats-275fdcce1a81428a9a610b0e76e58665.jpg" alt="Ảnh 3" />
+          </button>
+        </div>
+      </div>
+
+      <!-- INFO -->
+      <div class="pd-info">
+        <p class="pd-origin">Hàn Quốc — Busan Foods</p>
+        <h1 class="pd-name">Kimchi Baechu 1kg</h1>
+
+        <div class="pd-rating">
+          <span class="pd-stars">★★★★★</span>
+          <span class="pd-rating-count">4.9 (312 đánh giá)</span>
+        </div>
+
+        <div class="pd-price-wrap">
+          <span class="pd-price">189.000<sub>đ</sub></span>
+          <span class="pd-price-old">229.000đ</span>
+          <span class="pd-discount">−18%</span>
+        </div>
+
+        <p class="pd-short-desc">Kimchi cải thảo nguyên gốc Hàn Quốc, làm từ cải thảo tươi muối cùng hỗn hợp gochugaru, tỏi, gừng và hải sản. Được lên men tự nhiên đúng quy trình, giòn, chua vừa, cay thơm — chuẩn vị Seoul.</p>
+
+        <!-- META TAGS -->
+        <div class="pd-tags">
+          <span>Chính hãng</span>
+          <span>Nhập khẩu trực tiếp</span>
+          <span>Lên men tự nhiên</span>
+          <span>Không chất bảo quản</span>
+        </div>
+
+        <!-- QUANTITY & ADD -->
+        <div class="pd-buy">
+          <div class="qty-ctrl pd-qty">
+            <button class="qty-btn" onclick="changeQty(-1)">−</button>
+            <input class="qty-val" type="number" value="1" min="1" max="99" id="pdQty" />
+            <button class="qty-btn" onclick="changeQty(1)">+</button>
+          </div>
+          <button class="btn-fill pd-add" onclick="addToCart()">Thêm vào giỏ hàng</button>
+        </div>
+        <a href="cart.html" class="btn-line pd-buy-now">Mua ngay →</a>
+
+        <!-- GUARANTEES -->
+        <div class="pd-guarantees">
+          <div class="pd-guarantee">
+            <span class="pd-g-icon">✓</span>
+            <span>Giao hàng toàn quốc 2–3 ngày</span>
+          </div>
+          <div class="pd-guarantee">
+            <span class="pd-g-icon">✓</span>
+            <span>Miễn phí ship từ 300.000đ</span>
+          </div>
+          <div class="pd-guarantee">
+            <span class="pd-g-icon">✓</span>
+            <span>Đổi trả trong 7 ngày</span>
+          </div>
+          <div class="pd-guarantee">
+            <span class="pd-g-icon">✓</span>
+            <span>Thanh toán bảo mật SSL 256-bit</span>
+          </div>
+        </div>
+
+        <!-- DETAILS -->
+        <div class="pd-details">
+          <button class="pd-details-toggle" onclick="toggleDetail('spec')">
+            <span>Thông số sản phẩm</span>
+            <span class="pd-toggle-icon" id="icon-spec">+</span>
+          </button>
+          <div class="pd-details-body" id="detail-spec">
+            <table class="pd-spec-table">
+              <tr><td>Thương hiệu</td><td>Busan Foods</td></tr>
+              <tr><td>Xuất xứ</td><td>Hàn Quốc</td></tr>
+              <tr><td>Trọng lượng</td><td>1 kg (1000g)</td></tr>
+              <tr><td>Thành phần chính</td><td>Cải thảo, Muối, Gochugaru, Tỏi, Gừng, Cá cơm</td></tr>
+              <tr><td>Hạn sử dụng</td><td>12 tháng kể từ ngày sản xuất</td></tr>
+              <tr><td>Bảo quản</td><td>2–8°C (ngăn mát tủ lạnh)</td></tr>
+              <tr><td>Chứng nhận</td><td>CO/CQ, Bộ Y tế Việt Nam</td></tr>
+            </table>
+          </div>
+
+          <button class="pd-details-toggle" onclick="toggleDetail('desc')">
+            <span>Mô tả chi tiết</span>
+            <span class="pd-toggle-icon" id="icon-desc">+</span>
+          </button>
+          <div class="pd-details-body" id="detail-desc">
+            <p>Kimchi Baechu (김치 배추) là món ăn quốc dân của Hàn Quốc và là di sản văn hóa phi vật thể của UNESCO. Busan Foods — thương hiệu Kimchi uy tín từ thành phố Busan — sử dụng công thức truyền thống gia đình được lưu truyền hơn 3 thế hệ.</p>
+            <p style="margin-top:14px;">Mỗi mẻ Kimchi được làm thủ công từ cải thảo tươi thu hoạch trong mùa, ủ muối cùng hỗn hợp gia vị đặc trưng bao gồm bột ớt Gochugaru, tỏi, gừng, hành lá và tinh chất cá cơm. Sau khi ướp đủ thời gian, Kimchi được đóng gói khép kín và lên men tự nhiên trong điều kiện nhiệt độ được kiểm soát nghiêm ngặt.</p>
+            <p style="margin-top:14px;">Sản phẩm được nhập khẩu trực tiếp từ Busan Foods về Hàn Quán, đảm bảo đủ giấy tờ CO/CQ, tem kiểm định Bộ Y tế Việt Nam và nhãn tiếng Việt đầy đủ thông tin.</p>
+          </div>
+
+          <button class="pd-details-toggle" onclick="toggleDetail('usage')">
+            <span>Hướng dẫn sử dụng & Bảo quản</span>
+            <span class="pd-toggle-icon" id="icon-usage">+</span>
+          </button>
+          <div class="pd-details-body" id="detail-usage">
+            <p>Kimchi có thể ăn ngay hoặc tiếp tục để lên men thêm để có vị chua đậm hơn. Thích hợp ăn kèm cơm, mì, làm nhân bánh bao, xào hoặc nấu canh Kimchi jjigae.</p>
+            <p style="margin-top:14px;"><strong>Bảo quản:</strong> Giữ trong ngăn mát tủ lạnh từ 2–8°C. Sau khi mở, dùng trong vòng 4 tuần và đảm bảo nắp đậy kín. Không để ở nhiệt độ phòng quá 2 giờ.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS SECTION -->
+<section class="pd-reviews-section">
+  <div class="pd-reviews-inner">
+    <div class="pd-reviews-header">
+      <div>
+        <p class="section-tag">Phản hồi khách hàng</p>
+        <h2 class="section-heading">ĐÁNH GIÁ<br><em>SẢN PHẨM</em></h2>
+      </div>
+      <div class="pd-reviews-summary">
+        <div class="pd-avg">
+          <strong>4.9</strong>
+          <div class="pd-avg-stars">★★★★★</div>
+          <span>312 đánh giá</span>
+        </div>
+        <div class="pd-bars">
+          <div class="pd-bar-row"><span>5★</span><div class="pd-bar"><div class="pd-bar-fill" style="width:88%"></div></div><span>275</span></div>
+          <div class="pd-bar-row"><span>4★</span><div class="pd-bar"><div class="pd-bar-fill" style="width:8%"></div></div><span>25</span></div>
+          <div class="pd-bar-row"><span>3★</span><div class="pd-bar"><div class="pd-bar-fill" style="width:3%"></div></div><span>9</span></div>
+          <div class="pd-bar-row"><span>2★</span><div class="pd-bar"><div class="pd-bar-fill" style="width:1%"></div></div><span>2</span></div>
+          <div class="pd-bar-row"><span>1★</span><div class="pd-bar"><div class="pd-bar-fill" style="width:0%"></div></div><span>1</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pd-reviews-grid">
+      <div class="pd-review reveal">
+        <div class="pd-review-top">
+          <div class="pd-reviewer-avatar">HT</div>
+          <div>
+            <div class="pd-reviewer-name">Hoàng Thị Lan</div>
+            <div class="pd-review-date">28 Tháng 3, 2026</div>
+          </div>
+          <div class="pd-review-stars">★★★★★</div>
+        </div>
+        <p class="pd-review-text">Kimchi giòn, chua vừa phải, không bị nhũn. Mùi thơm đặc trưng của Kimchi thật chứ không phải mùi nhân tạo. Gia đình mình mua lần 3 rồi, chắc chắn còn mua tiếp!</p>
+        <div class="pd-review-tag">Đã mua 3 lần</div>
+      </div>
+      <div class="pd-review reveal" style="transition-delay:.1s">
+        <div class="pd-review-top">
+          <div class="pd-reviewer-avatar">TK</div>
+          <div>
+            <div class="pd-reviewer-name">Trần Khải Minh</div>
+            <div class="pd-review-date">20 Tháng 3, 2026</div>
+          </div>
+          <div class="pd-review-stars">★★★★★</div>
+        </div>
+        <p class="pd-review-text">Mình là người Hàn, ăn Kimchi từ nhỏ. Sản phẩm này đúng chuẩn vị Hàn, không bị ngọt hóa hay thay đổi cho hợp khẩu vị Việt. Rất hài lòng, giao hàng nhanh, đóng gói chắc chắn.</p>
+        <div class="pd-review-tag">Khách hàng người Hàn</div>
+      </div>
+      <div class="pd-review reveal" style="transition-delay:.2s">
+        <div class="pd-review-top">
+          <div class="pd-reviewer-avatar">NL</div>
+          <div>
+            <div class="pd-reviewer-name">Nguyễn Linh Đan</div>
+            <div class="pd-review-date">12 Tháng 3, 2026</div>
+          </div>
+          <div class="pd-review-stars">★★★★★</div>
+        </div>
+        <p class="pd-review-text">Nấu canh Kimchi jjigae với sản phẩm này ra màu đẹp, vị đậm đà. Kimchi đủ độ chua để nấu, không cần thêm giấm. Hàng Quán giao nhanh và có tem kiểm định đầy đủ, an tâm lắm.</p>
+        <div class="pd-review-tag">Dùng để nấu ăn</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RELATED PRODUCTS -->
+<section class="products products-new">
+  <div class="products-inner">
+    <div class="products-header" style="margin-bottom:40px;">
+      <div>
+        <p class="section-tag">Có thể bạn sẽ thích</p>
+        <h2 class="section-heading">SẢN PHẨM<br><em>LIÊN QUAN</em></h2>
+      </div>
+      <a href="shop.html" class="ghost-link">Xem tất cả &rarr;</a>
+    </div>
+    <div class="products-grid grid-4">
+      <div class="product-card reveal">
+        <div class="pcard-img">
+          <img src="https://m.media-amazon.com/images/I/71ynoLzgGRL._AC_UF894,1000_QL80_.jpg" alt="Shin Ramyun" />
+          <span class="pcard-badge">Phổ biến</span>
+          <a href="product.html" class="pcard-action">Xem chi tiết</a>
+        </div>
+        <div class="pcard-body">
+          <p class="pcard-origin">Hàn Quốc — Nongshim</p>
+          <h3>Shin Ramyun hộp 5 gói</h3>
+          <p class="pcard-price">75.000<span>đ</span></p>
+        </div>
+      </div>
+      <div class="product-card reveal" style="transition-delay:.08s">
+        <div class="pcard-img">
+          <img src="https://www.tteokbokki.vn/cdn/shop/files/Tuong-ot-gochujang-CJ-500g.png?v=1698827222" alt="Gochujang" />
+          <a href="product.html" class="pcard-action">Xem chi tiết</a>
+        </div>
+        <div class="pcard-body">
+          <p class="pcard-origin">Hàn Quốc — CJ Foods</p>
+          <h3>Tương ớt Gochujang 500g</h3>
+          <p class="pcard-price">99.000<span>đ</span></p>
+        </div>
+      </div>
+      <div class="product-card reveal" style="transition-delay:.16s">
+        <div class="pcard-img">
+          <img src="https://cdn.tgdd.vn/Products/Images/7162/325612/bhx/banh-gao-tteokbokki-bibigo-vi-cay-ngot-ly-125g-202405081534271955.jpg" alt="Tteok" />
+          <a href="product.html" class="pcard-action">Xem chi tiết</a>
+        </div>
+        <div class="pcard-body">
+          <p class="pcard-origin">Hàn Quốc — Bibigo</p>
+          <h3>Bánh gạo Tteok 500g</h3>
+          <p class="pcard-price">120.000<span>đ</span></p>
+        </div>
+      </div>
+      <div class="product-card reveal" style="transition-delay:.24s">
+        <div class="pcard-img">
+          <img src="https://www.tteokbokki.vn/cdn/shop/files/Sua-chuoi-Binggrae-hop-200ml.png?v=1742463820" alt="Sữa chuối" />
+          <a href="product.html" class="pcard-action">Xem chi tiết</a>
+        </div>
+        <div class="pcard-body">
+          <p class="pcard-origin">Hàn Quốc — Binggrae</p>
+          <h3>Sữa chuối Binggrae 200ml</h3>
+          <p class="pcard-price">22.000<span>đ</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="f-logo">HÀN QUÁN</div>
+        <p>Chuyên cung cấp thực phẩm Hàn Quốc nhập khẩu chính hãng. Chất lượng và hương vị chuẩn Hàn.</p>
+        <div class="f-socials">
+          <a href="#">Facebook</a>
+          <a href="#">Instagram</a>
+          <a href="#">TikTok</a>
+        </div>
+      </div>
+      <div class="footer-cols">
+        <div class="f-col">
+          <h4>Điều hướng</h4>
+          <a href="index.html">Trang chủ</a>
+          <a href="shop.html">Cửa hàng</a>
+          <a href="blog.html">Blog</a>
+          <a href="about.html">Về chúng tôi</a>
+          <a href="contact.html">Liên hệ</a>
+          <a href="cart.html">Giỏ hàng</a>
+        </div>
+        <div class="f-col">
+          <h4>Hỗ trợ</h4>
+          <a href="#">Chính sách đổi trả</a>
+          <a href="#">Hướng dẫn đặt hàng</a>
+          <a href="#">Câu hỏi thường gặp</a>
+          <a href="#">Theo dõi đơn hàng</a>
+        </div>
+        <div class="f-col">
+          <h4>Liên hệ</h4>
+          <p>Quận 7, TP. Hồ Chí Minh</p>
+          <p>0972 367 367</p>
+          <p>krstore (at) gmail.com</p>
+          <p>8:00 – 22:00 hàng ngày</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Hàn Quán. All rights reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Chính sách bảo mật</a>
+        <a href="#">Điều khoản sử dụng</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function toggleNav() {
+    document.getElementById('mobileMenu').classList.toggle('open');
+    document.querySelector('.burger').classList.toggle('active');
+  }
+  function closeNav() {
+    document.getElementById('mobileMenu').classList.remove('open');
+    document.querySelector('.burger').classList.remove('active');
+  }
+
+  function changeImg(btn, src) {
+    document.getElementById('mainImgEl').src = src;
+    document.querySelectorAll('.pd-thumb').forEach(function(b) { b.classList.remove('active'); });
+    btn.classList.add('active');
+  }
+
+  function changeQty(delta) {
+    var inp = document.getElementById('pdQty');
+    var val = parseInt(inp.value) + delta;
+    if (val < 1) val = 1;
+    if (val > 99) val = 99;
+    inp.value = val;
+  }
+
+  function addToCart() {
+    var qty = document.getElementById('pdQty').value;
+    var btn = document.querySelector('.pd-add');
+    btn.textContent = '✓ Đã thêm ' + qty + ' sản phẩm!';
+    btn.style.background = '#1a7a1a';
+    setTimeout(function() {
+      btn.textContent = 'Thêm vào giỏ hàng';
+      btn.style.background = '';
+    }, 2000);
+  }
+
+  function toggleDetail(id) {
+    var body = document.getElementById('detail-' + id);
+    var icon = document.getElementById('icon-' + id);
+    var open = body.classList.toggle('open');
+    icon.textContent = open ? '−' : '+';
+  }
+
+  var io = new IntersectionObserver(function(entries) {
+    entries.forEach(function(e) {
+      if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(function(el) { io.observe(el); });
+
+  window.addEventListener('scroll', function() {
+    document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 10);
+  });
+</script>
+</body>
+</html>

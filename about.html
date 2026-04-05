@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Về Chúng Tôi — Hàn Quán</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<header class="nav-bar" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <img src="https://res.cloudinary.com/dq41i1pip/image/upload/v1774429336/b822f04c-6b24-4600-bb9b-48e8c4bc6e9a-removebg-preview_1_f2jdpx.png" alt="Hàn Quán" class="nav-logo-img" />
+    </a>
+    <nav class="nav-links">
+      <a href="index.html#features">Dịch vụ</a>
+      <a href="shop.html">Sản phẩm</a>
+      <a href="blog.html">Blog</a>
+      <a href="about.html" class="active">Về chúng tôi</a>
+      <a href="contact.html">Liên hệ</a>
+    </nav>
+    <a href="cart.html" class="nav-cta">🛒 Giỏ hàng</a>
+    <button class="burger" onclick="toggleNav()" aria-label="Menu">
+      <div></div>
+      <div></div>
+    </button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html#features" onclick="closeNav()">Dịch vụ</a>
+  <a href="shop.html" onclick="closeNav()">Sản phẩm</a>
+  <a href="blog.html" onclick="closeNav()">Blog</a>
+  <a href="about.html" onclick="closeNav()">Về chúng tôi</a>
+  <a href="contact.html" onclick="closeNav()">Liên hệ</a>
+  <a href="cart.html" onclick="closeNav()">Giỏ hàng</a>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="page-hero-bg">VỀ</div>
+  <div class="page-hero-inner">
+    <p class="breadcrumb"><a href="index.html">Trang chủ</a> &nbsp;/&nbsp; Về chúng tôi</p>
+    <h1>CÂU CHUYỆN<br><em>HÀN QUÁN</em></h1>
+    <p>Hành trình mang hương vị Hàn Quốc chính hãng đến từng bữa cơm Việt — từ một đam mê nhỏ đến 50.000 khách hàng trên toàn quốc.</p>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker">
+  <div class="ticker-track">
+    <span>NHẬP KHẨU TRỰC TIẾP</span><span>SEOUL, KOREA</span><span>TỪ NĂM 2018</span>
+    <span>50K KHÁCH HÀNG</span><span>CHÍNH HÃNG 100%</span><span>GIAO 48H</span>
+    <span>NHẬP KHẨU TRỰC TIẾP</span><span>SEOUL, KOREA</span><span>TỪ NĂM 2018</span>
+    <span>50K KHÁCH HÀNG</span><span>CHÍNH HÃNG 100%</span><span>GIAO 48H</span>
+  </div>
+</div>
+
+<!-- OUR STORY -->
+<section class="about-story">
+  <div class="about-story-inner">
+    <div class="about-story-text reveal">
+      <p class="section-tag">Câu chuyện của chúng tôi</p>
+      <h2 class="section-heading">TỪ TÌNH YÊU<br><em>ẨM THỰC HÀN</em></h2>
+      <p>Hàn Quán ra đời năm 2018 từ một ý tưởng đơn giản: mang những hộp Kimchi chuẩn vị, những gói mì Shin Ramyun thật sự, những chai Soju chính hãng — về đến tay người Việt yêu ẩm thực Hàn, không qua trung gian, không qua hàng giả.</p>
+      <p>Người sáng lập — chị Nguyễn Hoàng Yến — từng du học tại Busan và mang theo nỗi nhớ những buổi ăn tối cùng bạn bè Hàn Quốc. Khi về nước, chị quyết định xây dựng cầu nối ẩm thực thực sự, không phải chỉ nhập hàng mà còn kể câu chuyện văn hóa đằng sau mỗi món ăn.</p>
+      <p>Từ một kho nhỏ 30m² ở Quận 7, Hàn Quán giờ đây có hơn 2.400 sản phẩm, đội ngũ 35 người và hơn 50.000 khách hàng thân thiết trên toàn quốc.</p>
+      <a href="contact.html" class="btn-fill">Liên hệ chúng tôi</a>
+    </div>
+    <div class="about-img-wrap reveal" style="transition-delay:.15s;">
+      <img src="https://toptentravel.com.vn/Data/Sites/1/media/Tin-tuc/cam-nang-du-lich/dac-san-am-thuc-noi-tieng-cua-han-quoc-15.jpg" alt="Hàn Quán Story" />
+      <div class="about-img-badge">
+        <strong>2018</strong>
+        <span>Năm thành lập</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="about-stats">
+  <div class="about-stats-inner">
+    <div class="a-stat reveal">
+      <strong>50K+</strong>
+      <span>Khách hàng tin tưởng</span>
+    </div>
+    <div class="a-stat reveal" style="transition-delay:.08s">
+      <strong>2,4K</strong>
+      <span>Sản phẩm đa dạng</span>
+    </div>
+    <div class="a-stat reveal" style="transition-delay:.16s">
+      <strong>4.9★</strong>
+      <span>Đánh giá trung bình</span>
+    </div>
+    <div class="a-stat reveal" style="transition-delay:.24s">
+      <strong>63</strong>
+      <span>Tỉnh thành giao hàng</span>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section class="about-team">
+  <div class="about-team-inner">
+    <div style="text-align:center; margin-bottom:64px;" class="reveal">
+      <p class="section-tag" style="justify-content:center; display:block; text-align:center;">Con người của chúng tôi</p>
+      <h2 class="section-heading" style="margin-bottom:0;">ĐỘI NGŨ<br><em>HÀN QUÁN</em></h2>
+    </div>
+    <div class="team-grid" style="grid-template-columns: repeat(4,1fr);">
+      <div class="team-card reveal">
+        <div class="team-img">
+          <img src="https://scontent-sin6-2.xx.fbcdn.net/v/t1.15752-9/647132280_934468716172016_8757209031185531155_n.png?_nc_cat=109&ccb=1-7&_nc_sid=9f807c&_nc_ohc=cfJkb7uPEfsQ7kNvwHfLglh&_nc_oc=AdoaRKHRNmV4cZ_bAqJXVn1hdc-Y3L2b61qVwPc7bV_zn6NXtR93q_FU7wnUAu7XWQT5eM2ODMFF4URldHQL5VX8&_nc_zt=23&_nc_ht=scontent-sin6-2.xx&_nc_ss=7a3a8&oh=03_Q7cD5AFqKwKMpQOzEOVdLqz5w_3QQQQjIfkYIiDntXGlHGO9Eg&oe=69F69BA0" alt="Nguyễn Ngọc Bảo Long" />
+        </div>
+        <div class="team-body">
+          <h3>Nguyễn Ngọc Bảo Long</h3>
+          <p class="team-role">Nhà sáng lập & CEO</p>
+          <p>Cựu du học sinh Busan với 8 năm kinh nghiệm nhập khẩu thực phẩm Đông Á. Người truyền cảm hứng đằng sau mọi quyết định của Hàn Quán.</p>
+        </div>
+      </div>
+      <div class="team-card reveal" style="transition-delay:.08s">
+        <div class="team-img">
+          <img src="https://scontent-sin11-1.xx.fbcdn.net/v/t1.15752-9/657601505_1675275763603878_4032600106341077668_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=9f807c&_nc_ohc=kH6t7zeCsTcQ7kNvwHTxZhL&_nc_oc=AdpFTq4etHE-eU6R4mBV08zyw4gaQfQeFm0r4XvWSY2V4okx29QB9mmuEm6Nlae3pX0FPBMybz1Xo1K74OH94GED&_nc_zt=23&_nc_ht=scontent-sin11-1.xx&_nc_ss=7a3a8&oh=03_Q7cD5AH3GEs32oeaeaCLgIDfLdO3paX4WMyoPuKW53nvS-f6gQ&oe=69F695D2" alt="Lê Minh Tài" />
+        </div>
+        <div class="team-body">
+          <h3>Lê Minh Tài</h3>
+          <p class="team-role">Giám đốc Vận hành</p>
+          <p>Chịu trách nhiệm chuỗi cung ứng từ Seoul đến tay khách hàng. Đảm bảo mọi đơn hàng được xử lý chính xác và giao đúng hẹn.</p>
+        </div>
+      </div>
+      <div class="team-card reveal" style="transition-delay:.16s">
+        <div class="team-img">
+          <img src="https://scontent-sin2-3.xx.fbcdn.net/v/t1.15752-9/661966035_949856967428141_8640700092858131641_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=9f807c&_nc_ohc=ou3pHoqGLd4Q7kNvwH4UvVU&_nc_oc=Adp0ZXq-BLbIA74GXY9vK45ZYt7CP1P6_wzRrVjbkPa5JVUsMq_TkQ45BS_HDiRmgCeXQtkZ7WXWoughMz9bwEf7&_nc_zt=23&_nc_ht=scontent-sin2-3.xx&_nc_ss=7a3a8&oh=03_Q7cD5AHiLQb1JZIVrcIZxEE4kbkV59Sj0LTq6bv0RF1Aj6Gzhg&oe=69F686F0" alt="Hoàng Hải Minh" />
+        </div>
+        <div class="team-body">
+          <h3>Hoàng Hải Minh</h3>
+          <p class="team-role">Trưởng phòng Chất lượng</p>
+          <p>Đảm bảo 100% sản phẩm có đầy đủ giấy tờ nhập khẩu, tem kiểm định và đạt tiêu chuẩn VSATTP của Bộ Y tế Việt Nam.</p>
+        </div>
+      </div>
+      <div class="team-card reveal" style="transition-delay:.24s">
+        <div class="team-img">
+          <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=600&h=800&fit=crop&q=80" alt="Lâm Vũ Khánh" />
+        </div>
+        <div class="team-body">
+          <h3>Lâm Vũ Khánh</h3>
+          <p class="team-role">Trưởng phòng Marketing</p>
+          <p>Xây dựng thương hiệu Hàn Quán trên mạng xã hội và đứng sau các chiến dịch nội dung ẩm thực Hàn được hàng triệu người theo dõi.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VALUES -->
+<section class="about-values">
+  <div class="about-values-inner">
+    <div style="margin-bottom:64px;" class="reveal">
+      <p class="section-tag">Triết lý kinh doanh</p>
+      <h2 class="section-heading">GIÁ TRỊ<br><em>CỐT LÕI</em></h2>
+    </div>
+    <div class="values-grid">
+      <div class="value-item reveal">
+        <div class="value-num">01</div>
+        <div class="value-text">
+          <h3>Chính hãng tuyệt đối</h3>
+          <p>Mỗi sản phẩm đều có hợp đồng mua bán trực tiếp với nhà sản xuất Hàn Quốc, chứng nhận xuất xứ CO/CQ và tem kiểm định Bộ Y tế. Không bao giờ thỏa hiệp về xuất xứ.</p>
+        </div>
+      </div>
+      <div class="value-item reveal" style="transition-delay:.08s">
+        <div class="value-num">02</div>
+        <div class="value-text">
+          <h3>Minh bạch thông tin</h3>
+          <p>Mọi sản phẩm đều được dán nhãn tiếng Việt đầy đủ thành phần, hạn sử dụng và hướng dẫn sử dụng. Khách hàng luôn biết mình đang mua gì.</p>
+        </div>
+      </div>
+      <div class="value-item reveal" style="transition-delay:.04s">
+        <div class="value-num">03</div>
+        <div class="value-text">
+          <h3>Dịch vụ tận tâm</h3>
+          <p>Đội ngũ chăm sóc khách hàng hoạt động từ 8:00 đến 22:00 mỗi ngày, sẵn sàng tư vấn cách dùng sản phẩm, gợi ý công thức và hỗ trợ đổi trả nhanh chóng.</p>
+        </div>
+      </div>
+      <div class="value-item reveal" style="transition-delay:.12s">
+        <div class="value-num">04</div>
+        <div class="value-text">
+          <h3>Bền vững & Trách nhiệm</h3>
+          <p>Sử dụng bao bì tái chế, tối ưu hành trình vận chuyển để giảm carbon footprint và đóng góp 1% doanh thu cho các chương trình an toàn thực phẩm cộng đồng.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROMO STRIP -->
+<section class="promo">
+  <div class="promo-inner">
+    <div class="promo-left">
+      <div class="promo-disc">&minus;20%</div>
+      <div class="promo-text">
+        <p class="section-tag promo-tag">Ưu đãi có hạn</p>
+        <h2>ĐƠN HÀNG<br>ĐẦU TIÊN</h2>
+        <p>Nhập mã <strong>KOREA20</strong> khi thanh toán<br>để nhận ngay ưu đãi đặc biệt.</p>
+        <a href="shop.html" class="btn-fill btn-white">Mua ngay</a>
+      </div>
+    </div>
+    <div class="promo-right" aria-hidden="true">
+      <div class="promo-bg-text">HQ</div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="f-logo">HÀN QUÁN</div>
+        <p>Chuyên cung cấp thực phẩm Hàn Quốc nhập khẩu chính hãng. Chất lượng và hương vị chuẩn Hàn.</p>
+        <div class="f-socials">
+          <a href="#">Facebook</a>
+          <a href="#">Instagram</a>
+          <a href="#">TikTok</a>
+        </div>
+      </div>
+      <div class="footer-cols">
+        <div class="f-col">
+          <h4>Điều hướng</h4>
+          <a href="index.html">Trang chủ</a>
+          <a href="shop.html">Cửa hàng</a>
+          <a href="blog.html">Blog</a>
+          <a href="about.html">Về chúng tôi</a>
+          <a href="contact.html">Liên hệ</a>
+          <a href="cart.html">Giỏ hàng</a>
+        </div>
+        <div class="f-col">
+          <h4>Hỗ trợ</h4>
+          <a href="#">Chính sách đổi trả</a>
+          <a href="#">Hướng dẫn đặt hàng</a>
+          <a href="#">Câu hỏi thường gặp</a>
+          <a href="#">Theo dõi đơn hàng</a>
+        </div>
+        <div class="f-col">
+          <h4>Liên hệ</h4>
+          <p>Quận 7, TP. Hồ Chí Minh</p>
+          <p>0972 367 367</p>
+          <p>krstore (at) gmail.com</p>
+          <p>8:00 – 22:00 hàng ngày</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Hàn Quán. All rights reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Chính sách bảo mật</a>
+        <a href="#">Điều khoản sử dụng</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function toggleNav() {
+    document.getElementById('mobileMenu').classList.toggle('open');
+    document.querySelector('.burger').classList.toggle('active');
+  }
+  function closeNav() {
+    document.getElementById('mobileMenu').classList.remove('open');
+    document.querySelector('.burger').classList.remove('active');
+  }
+  var io = new IntersectionObserver(function(entries) {
+    entries.forEach(function(e) {
+      if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(function(el) { io.observe(el); });
+  window.addEventListener('scroll', function() {
+    document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 10);
+  });
+</script>
+</body>
+</html>

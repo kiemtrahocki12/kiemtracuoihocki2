@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Giỏ Hàng — Hàn Quán</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<header class="nav-bar" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <img src="https://res.cloudinary.com/dq41i1pip/image/upload/v1774429336/b822f04c-6b24-4600-bb9b-48e8c4bc6e9a-removebg-preview_1_f2jdpx.png" alt="Hàn Quán" class="nav-logo-img" />
+    </a>
+    <nav class="nav-links">
+      <a href="index.html#features">Dịch vụ</a>
+      <a href="shop.html">Sản phẩm</a>
+      <a href="blog.html">Blog</a>
+      <a href="about.html">Về chúng tôi</a>
+      <a href="contact.html">Liên hệ</a>
+    </nav>
+    <a href="cart.html" class="nav-cta active" style="background:var(--red);">🛒 Giỏ hàng</a>
+    <button class="burger" onclick="toggleNav()" aria-label="Menu">
+      <div></div>
+      <div></div>
+    </button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html#features" onclick="closeNav()">Dịch vụ</a>
+  <a href="shop.html" onclick="closeNav()">Sản phẩm</a>
+  <a href="blog.html" onclick="closeNav()">Blog</a>
+  <a href="about.html" onclick="closeNav()">Về chúng tôi</a>
+  <a href="contact.html" onclick="closeNav()">Liên hệ</a>
+  <a href="cart.html" onclick="closeNav()">Giỏ hàng</a>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero" style="padding-bottom:0;">
+  <div class="page-hero-bg">GIỎ</div>
+  <div class="page-hero-inner" style="padding-bottom:52px;">
+    <p class="breadcrumb"><a href="index.html">Trang chủ</a> &nbsp;/&nbsp; Giỏ hàng</p>
+    <h1>GIỎ<br><em>HÀNG</em></h1>
+    <p>Kiểm tra lại sản phẩm và tiến hành thanh toán.</p>
+  </div>
+</section>
+
+<!-- CART SECTION -->
+<section class="cart-section">
+  <div class="cart-inner" id="cartContent">
+
+    <!-- LEFT: ITEM LIST -->
+    <div>
+      <div class="cart-list-head">
+        <h2>SẢN PHẨM ĐÃ CHỌN</h2>
+        <span class="cart-count" id="cartCount">5 sản phẩm</span>
+      </div>
+
+      <div class="cart-table-head">
+        <span>Sản phẩm</span>
+        <span>Đơn giá</span>
+        <span>Số lượng</span>
+        <span></span>
+      </div>
+
+      <div id="cartItems">
+
+        <!-- Item 1 -->
+        <div class="cart-item" data-id="1" data-price="189000">
+          <div class="cart-item-info">
+            <div class="cart-item-img">
+              <img src="https://busanfoods.com/wp-content/uploads/2020/06/Kimchi-cai-thao-busan-foods-2-1.jpg" alt="Kimchi" />
+            </div>
+            <div>
+              <div class="cart-item-name">Kimchi Baechu 1kg</div>
+              <div class="cart-item-origin">Hàn Quốc — Busan Foods</div>
+            </div>
+          </div>
+          <div class="cart-item-price">189.000<span>đ</span></div>
+          <div class="qty-ctrl">
+            <button class="qty-btn" onclick="changeQty(1,-1)">−</button>
+            <input class="qty-val" type="number" value="2" min="1" max="99" onchange="updateQty(1,this.value)" id="qty-1" />
+            <button class="qty-btn" onclick="changeQty(1,1)">+</button>
+          </div>
+          <button class="cart-remove" onclick="removeItem(1)" title="Xoá">✕</button>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="cart-item" data-id="2" data-price="75000">
+          <div class="cart-item-info">
+            <div class="cart-item-img">
+              <img src="https://m.media-amazon.com/images/I/71ynoLzgGRL._AC_UF894,1000_QL80_.jpg" alt="Shin Ramyun" />
+            </div>
+            <div>
+              <div class="cart-item-name">Shin Ramyun hộp 5 gói</div>
+              <div class="cart-item-origin">Hàn Quốc — Nongshim</div>
+            </div>
+          </div>
+          <div class="cart-item-price">75.000<span>đ</span></div>
+          <div class="qty-ctrl">
+            <button class="qty-btn" onclick="changeQty(2,-1)">−</button>
+            <input class="qty-val" type="number" value="3" min="1" max="99" onchange="updateQty(2,this.value)" id="qty-2" />
+            <button class="qty-btn" onclick="changeQty(2,1)">+</button>
+          </div>
+          <button class="cart-remove" onclick="removeItem(2)" title="Xoá">✕</button>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="cart-item" data-id="3" data-price="99000">
+          <div class="cart-item-info">
+            <div class="cart-item-img">
+              <img src="https://www.tteokbokki.vn/cdn/shop/files/Tuong-ot-gochujang-CJ-500g.png?v=1698827222" alt="Gochujang" />
+            </div>
+            <div>
+              <div class="cart-item-name">Tương ớt Gochujang 500g</div>
+              <div class="cart-item-origin">Hàn Quốc — CJ Foods</div>
+            </div>
+          </div>
+          <div class="cart-item-price">99.000<span>đ</span></div>
+          <div class="qty-ctrl">
+            <button class="qty-btn" onclick="changeQty(3,-1)">−</button>
+            <input class="qty-val" type="number" value="1" min="1" max="99" onchange="updateQty(3,this.value)" id="qty-3" />
+            <button class="qty-btn" onclick="changeQty(3,1)">+</button>
+          </div>
+          <button class="cart-remove" onclick="removeItem(3)" title="Xoá">✕</button>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="cart-item" data-id="4" data-price="120000">
+          <div class="cart-item-info">
+            <div class="cart-item-img">
+              <img src="https://cdn.tgdd.vn/Products/Images/7162/325612/bhx/banh-gao-tteokbokki-bibigo-vi-cay-ngot-ly-125g-202405081534271955.jpg" alt="Tteok" />
+            </div>
+            <div>
+              <div class="cart-item-name">Bánh gạo Tteok 500g</div>
+              <div class="cart-item-origin">Hàn Quốc — Bibigo</div>
+            </div>
+          </div>
+          <div class="cart-item-price">120.000<span>đ</span></div>
+          <div class="qty-ctrl">
+            <button class="qty-btn" onclick="changeQty(4,-1)">−</button>
+            <input class="qty-val" type="number" value="2" min="1" max="99" onchange="updateQty(4,this.value)" id="qty-4" />
+            <button class="qty-btn" onclick="changeQty(4,1)">+</button>
+          </div>
+          <button class="cart-remove" onclick="removeItem(4)" title="Xoá">✕</button>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="cart-item" data-id="5" data-price="65000">
+          <div class="cart-item-info">
+            <div class="cart-item-img">
+              <img src="https://www.lottemart.vn/media/catalog/product/cache/0x0/8/8/8801152233801-1-1.jpg.webp" alt="Soju" />
+            </div>
+            <div>
+              <div class="cart-item-name">Rượu Soju Chum Churum 360ml</div>
+              <div class="cart-item-origin">Hàn Quốc — Lotte Chilsung</div>
+            </div>
+          </div>
+          <div class="cart-item-price">65.000<span>đ</span></div>
+          <div class="qty-ctrl">
+            <button class="qty-btn" onclick="changeQty(5,-1)">−</button>
+            <input class="qty-val" type="number" value="1" min="1" max="99" onchange="updateQty(5,this.value)" id="qty-5" />
+            <button class="qty-btn" onclick="changeQty(5,1)">+</button>
+          </div>
+          <button class="cart-remove" onclick="removeItem(5)" title="Xoá">✕</button>
+        </div>
+
+      </div><!-- END #cartItems -->
+
+      <!-- EMPTY STATE -->
+      <div class="cart-empty" id="cartEmpty">
+        <div class="cart-empty-icon">🛒</div>
+        <h3>Giỏ hàng trống</h3>
+        <p>Chưa có sản phẩm nào trong giỏ hàng của bạn.</p>
+        <a href="shop.html" class="btn-fill">Khám phá sản phẩm</a>
+      </div>
+
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-top:32px; padding-top:24px; border-top:1px solid var(--border);" id="cartActions">
+        <a href="shop.html" class="ghost-link">← Tiếp tục mua sắm</a>
+        <button class="btn-line" onclick="clearCart()">Xoá tất cả</button>
+      </div>
+
+    </div><!-- END LEFT COLUMN -->
+
+    <!-- RIGHT: SUMMARY -->
+    <aside class="cart-aside">
+      <div class="cart-summary">
+        <h3>TÓM TẮT ĐƠN HÀNG</h3>
+
+        <div class="cart-line">
+          <span>Tạm tính (<span id="summaryCount">5</span> sp)</span>
+          <strong id="subtotalDisplay">1.028.000đ</strong>
+        </div>
+        <div class="cart-line">
+          <span>Phí vận chuyển</span>
+          <strong id="shippingDisplay">Miễn phí</strong>
+        </div>
+        <div class="cart-line" id="discountLine" style="display:none;">
+          <span style="color:var(--red);">Mã giảm giá (KOREA20)</span>
+          <strong style="color:var(--red);" id="discountDisplay">−0đ</strong>
+        </div>
+
+        <div class="promo-input">
+          <input type="text" id="promoCode" placeholder="Nhập mã giảm giá..." />
+          <button onclick="applyPromo()">Áp dụng</button>
+        </div>
+        <p class="promo-note" id="promoNote">Thử mã <strong>KOREA20</strong> để giảm 20%</p>
+
+        <div class="cart-line total">
+          <span>Tổng cộng</span>
+          <strong id="totalDisplay">1.028.000<sub>đ</sub></strong>
+        </div>
+
+        <a href="#" class="btn-fill" onclick="checkout()">Tiến hành thanh toán →</a>
+        <a href="shop.html" class="btn-line">Tiếp tục mua sắm</a>
+
+        <div class="cart-secure">Thanh toán bảo mật SSL 256-bit</div>
+
+        <div style="margin-top:24px; padding-top:24px; border-top:1px solid var(--border);">
+          <p style="font-size:12px; color:var(--grey); line-height:1.7;">
+            ✓ Giao hàng toàn quốc 2–3 ngày<br>
+            ✓ Miễn phí ship từ 300.000đ<br>
+            ✓ Đổi trả trong 7 ngày
+          </p>
+        </div>
+      </div>
+    </aside>
+
+  </div><!-- END .cart-inner -->
+</section>
+
+<!-- RELATED PRODUCTS -->
+<section class="cart-related">
+  <div class="cart-related-inner">
+    <div class="products-header" style="margin-bottom:40px;">
+      <div>
+        <p class="section-tag">Có thể bạn sẽ thích</p>
+        <h2 class="section-heading">SẢN PHẨM<br><em>GỢI Ý</em></h2>
+      </div>
+      <a href="shop.html" class="ghost-link">Xem tất cả &rarr;</a>
+    </div>
+    <div class="products-grid grid-4">
+      <div class="product-card reveal">
+        <div class="pcard-img">
+          <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-liqaz3yxyh1u53" alt="Bibimbap" />
+          <button class="pcard-action" onclick="addToCart('Bibimbap ăn liền 280g', 55000)">Thêm vào giỏ</button>
+        </div>
+        <div class="pcard-body">
+          <p class="pcard-origin">Hàn Quốc — CJ Bibigo</p>
+          <h3>Bibimbap ăn liền 280g</h3>
+          <p class="pcard-price">55.000<span>đ</span></p>
+        </div>
+      </div>
+      <div class="product-card reveal" style="transition-delay:.08s">
+        <div class="pcard-img">
+          <img src="https://cdn.tgdd.vn/Products/Images/7083/197235/bhx/loc-3-goi-rong-bien-an-lien-vi-bbq-bibigo-5g-202002031129488732.jpg" alt="Rong biển" />
+          <button class="pcard-action" onclick="addToCart('Rong biển nướng muối mè', 35000)">Thêm vào giỏ</button>
+        </div>
+        <div class="pcard-body">
+          <p class="pcard-origin">Hàn Quốc — CJ Bibigo</p>
+          <h3>Rong biển nướng muối mè 3 gói</h3>
+          <p class="pcard-price">35.000<span>đ</span></p>
+        </div>
+      </div>
+      <div class="product-card reveal" style="transition-delay:.16s">
+        <div class="pcard-img">
+          <img src="https://www.tteokbokki.vn/cdn/shop/files/Sua-chuoi-Binggrae-hop-200ml.png?v=1742463820" alt="Sữa chuối" />
+          <button class="pcard-action" onclick="addToCart('Sữa chuối Binggrae 200ml', 22000)">Thêm vào giỏ</button>
+        </div>
+        <div class="pcard-body">
+          <p class="pcard-origin">Hàn Quốc — Binggrae</p>
+          <h3>Sữa chuối Binggrae 200ml</h3>
+          <p class="pcard-price">22.000<span>đ</span></p>
+        </div>
+      </div>
+      <div class="product-card reveal" style="transition-delay:.24s">
+        <div class="pcard-img">
+          <img src="https://www.tteokbokki.vn/cdn/shop/products/Thit-hop-Han-Quoc-CJ-340g.png?v=1677653424" alt="Thịt hộp" />
+          <button class="pcard-action" onclick="addToCart('Thịt hộp Spam CJ 340g', 115000)">Thêm vào giỏ</button>
+        </div>
+        <div class="pcard-body">
+          <p class="pcard-origin">Hàn Quốc — CJ Foods</p>
+          <h3>Thịt hộp Spam CJ 340g</h3>
+          <p class="pcard-price">115.000<span>đ</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="f-logo">HÀN QUÁN</div>
+        <p>Chuyên cung cấp thực phẩm Hàn Quốc nhập khẩu chính hãng. Chất lượng và hương vị chuẩn Hàn.</p>
+        <div class="f-socials">
+          <a href="#">Facebook</a>
+          <a href="#">Instagram</a>
+          <a href="#">TikTok</a>
+        </div>
+      </div>
+      <div class="footer-cols">
+        <div class="f-col">
+          <h4>Điều hướng</h4>
+          <a href="index.html">Trang chủ</a>
+          <a href="shop.html">Cửa hàng</a>
+          <a href="blog.html">Blog</a>
+          <a href="about.html">Về chúng tôi</a>
+          <a href="contact.html">Liên hệ</a>
+          <a href="cart.html">Giỏ hàng</a>
+        </div>
+        <div class="f-col">
+          <h4>Hỗ trợ</h4>
+          <a href="#">Chính sách đổi trả</a>
+          <a href="#">Hướng dẫn đặt hàng</a>
+          <a href="#">Câu hỏi thường gặp</a>
+          <a href="#">Theo dõi đơn hàng</a>
+        </div>
+        <div class="f-col">
+          <h4>Liên hệ</h4>
+          <p>Quận 7, TP. Hồ Chí Minh</p>
+          <p>0972 367 367</p>
+          <p>krstore (at) gmail.com</p>
+          <p>8:00 – 22:00 hàng ngày</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Hàn Quán. All rights reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Chính sách bảo mật</a>
+        <a href="#">Điều khoản sử dụng</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  /* ========================
+     CART DATA & LOGIC
+     ======================== */
+  var cartData = [
+    { id:1, name:'Kimchi Baechu 1kg',          price:189000, qty:2 },
+    { id:2, name:'Shin Ramyun hộp 5 gói',      price:75000,  qty:3 },
+    { id:3, name:'Tương ớt Gochujang 500g',    price:99000,  qty:1 },
+    { id:4, name:'Bánh gạo Tteok 500g',        price:120000, qty:2 },
+    { id:5, name:'Rượu Soju Chum Churum 360ml',price:65000,  qty:1 },
+  ];
+  var promoApplied = false;
+
+  function fmt(n) {
+    return n.toLocaleString('vi-VN') + 'đ';
+  }
+
+  function calcSubtotal() {
+    return cartData.reduce(function(sum, item) {
+      return sum + item.price * item.qty;
+    }, 0);
+  }
+
+  function renderSummary() {
+    var sub   = calcSubtotal();
+    var disc  = promoApplied ? Math.round(sub * 0.2) : 0;
+    var ship  = sub >= 300000 ? 0 : 30000;
+    var total = sub - disc + ship;
+    var count = cartData.reduce(function(s,i){ return s + i.qty; }, 0);
+
+    document.getElementById('subtotalDisplay').textContent = fmt(sub);
+    document.getElementById('shippingDisplay').textContent = ship === 0 ? 'Miễn phí' : fmt(ship);
+    document.getElementById('totalDisplay').innerHTML = (total).toLocaleString('vi-VN') + '<sub>đ</sub>';
+    document.getElementById('summaryCount').textContent = cartData.length;
+    document.getElementById('cartCount').textContent = cartData.length + ' sản phẩm';
+
+    var dLine = document.getElementById('discountLine');
+    if (promoApplied) {
+      dLine.style.display = 'flex';
+      document.getElementById('discountDisplay').textContent = '−' + fmt(disc);
+    } else {
+      dLine.style.display = 'none';
+    }
+  }
+
+  function changeQty(id, delta) {
+    var item = cartData.find(function(i){ return i.id === id; });
+    if (!item) return;
+    item.qty = Math.max(1, item.qty + delta);
+    document.getElementById('qty-' + id).value = item.qty;
+    renderSummary();
+  }
+
+  function updateQty(id, val) {
+    var item = cartData.find(function(i){ return i.id === id; });
+    if (!item) return;
+    item.qty = Math.max(1, parseInt(val) || 1);
+    document.getElementById('qty-' + id).value = item.qty;
+    renderSummary();
+  }
+
+  function removeItem(id) {
+    var row = document.querySelector('.cart-item[data-id="' + id + '"]');
+    if (row) {
+      row.style.opacity = '0';
+      row.style.transform = 'translateX(20px)';
+      row.style.transition = 'opacity .3s, transform .3s';
+      setTimeout(function() {
+        row.remove();
+        cartData = cartData.filter(function(i){ return i.id !== id; });
+        renderSummary();
+        if (cartData.length === 0) showEmpty();
+      }, 300);
+    }
+  }
+
+  function clearCart() {
+    if (!confirm('Xoá tất cả sản phẩm khỏi giỏ hàng?')) return;
+    cartData = [];
+    document.getElementById('cartItems').innerHTML = '';
+    showEmpty();
+  }
+
+  function showEmpty() {
+    document.getElementById('cartEmpty').classList.add('show');
+    document.getElementById('cartActions').style.display = 'none';
+    document.getElementById('cartCount').textContent = '0 sản phẩm';
+    document.getElementById('subtotalDisplay').textContent = '0đ';
+    document.getElementById('totalDisplay').innerHTML = '0<sub>đ</sub>';
+    document.getElementById('summaryCount').textContent = '0';
+    document.querySelector('.cart-summary .btn-fill').style.opacity = '.4';
+    document.querySelector('.cart-summary .btn-fill').style.pointerEvents = 'none';
+  }
+
+  function applyPromo() {
+    var code = document.getElementById('promoCode').value.trim().toUpperCase();
+    var note = document.getElementById('promoNote');
+    if (code === 'KOREA20') {
+      promoApplied = true;
+      note.innerHTML = '✓ Mã <strong>KOREA20</strong> đã được áp dụng — giảm 20%';
+      note.style.color = '#22a25b';
+      renderSummary();
+    } else if (code === '') {
+      note.textContent = 'Vui lòng nhập mã giảm giá.';
+      note.style.color = 'var(--red)';
+    } else {
+      note.textContent = 'Mã không hợp lệ. Thử lại với mã KOREA20.';
+      note.style.color = 'var(--red)';
+    }
+  }
+
+  function checkout() {
+    alert('🎉 Đặt hàng thành công!\nChúng tôi sẽ liên hệ xác nhận trong vòng 30 phút.\nCảm ơn bạn đã mua hàng tại Hàn Quán!');
+  }
+
+  function addToCart(name, price) {
+    var existing = cartData.find(function(i){ return i.name === name; });
+    if (existing) {
+      existing.qty++;
+    } else {
+      var newId = Date.now();
+      cartData.push({ id: newId, name: name, price: price, qty: 1 });
+    }
+    renderSummary();
+    var msg = document.createElement('div');
+    msg.style.cssText = 'position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:var(--black);color:#fff;padding:14px 28px;font-size:13px;font-weight:600;letter-spacing:.08em;z-index:9999;transition:opacity .4s;';
+    msg.textContent = '✓  ' + name + ' đã thêm vào giỏ';
+    document.body.appendChild(msg);
+    setTimeout(function(){ msg.style.opacity='0'; setTimeout(function(){ msg.remove(); },400); }, 2200);
+  }
+
+  /* NAV */
+  function toggleNav() {
+    document.getElementById('mobileMenu').classList.toggle('open');
+    document.querySelector('.burger').classList.toggle('active');
+  }
+  function closeNav() {
+    document.getElementById('mobileMenu').classList.remove('open');
+    document.querySelector('.burger').classList.remove('active');
+  }
+
+  /* REVEAL */
+  var io = new IntersectionObserver(function(entries) {
+    entries.forEach(function(e) {
+      if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(function(el) { io.observe(el); });
+
+  window.addEventListener('scroll', function() {
+    document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 10);
+  });
+
+  /* INIT */
+  renderSummary();
+</script>
+</body>
+</html>
